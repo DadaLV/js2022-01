@@ -4,18 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+        <title>Document</title>
   </head>
   <body>
-    <form oninput="result.value=Pi*ParseInt(x.value)*ParseInt(x.value)">Введіть радіус кола<br><input type="text"><br>
-      <input type="submit" name="x" value="Порахувати площу кола">
-      <output name="result"></output>
+    <h2>Калькулятор площі кола</h2>
+    <p>Введи радіус кола</p>
+    <input id="number" />
+    <button type="button" onclick="radius()">Порахувати</button>
+    <p id="show">Площа кола:</p>
+
+    <script>
+      function radius() {
+        let a = document.getElementById("number").value.replace(/,/gi, ".");
+        let text;
+        if (a < 0 || isNaN(a)) {
+          text = "Упс, ти ввів не радіус";
+        } else {
+          rad = Math.PI * parseInt(number.value) * parseInt(number.value);
+          text = rad;
+        }
+        document.getElementById("show").innerHTML = "Площа кола: " + text;
+      }
+    </script>
+    <hr />
+    <h2>Ще один калькулятор площі кола</h2>
+    <p>Введи радіус кола</p>
+    <form oninput="result.value=Math.PI*(j.value)*parseInt(j.value)">
+      <input type="text" id="j" name="j" value="0" /><br />
+      Площа кола:
+      <output name="result" for="j">0</output>
     </form>
-    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-      <input type="range" id="b" name="b" value="50" /> +
-      <input type="number" id="a" name="a" value="10" /> =
-      <output name="result" for="a b">60</output>
-    </form>
-    
   </body>
 </html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    
   </head>
   <body>
     <h2>Калькулятор площі кола</h2>
@@ -13,19 +14,6 @@
     <button type="button" onclick="radius()">Порахувати</button>
     <p id="show">Площа кола:</p>
 
-    <script>
-      function radius() {
-        let a = document.getElementById("number").value.replace(/,/gi, ".");
-        let text;
-        if (a < 0 || isNaN(a)) {
-          text = "Упс, ти ввів не радіус";
-        } else {
-          rad = Math.PI * a * a;
-          text = rad;
-        }
-        document.getElementById("show").innerHTML = "Площа кола: " + text;
-      }
-    </script>
     <hr />
     <h2>Ще один калькулятор площі кола</h2>
     <p>Введи радіус кола</p>
@@ -40,53 +28,14 @@
     <input id="age" />
     <button type="button" onclick="pension()">Сміливіше</button>
     <p id="showp">Ех...</p>
-
-    <script>
-      function pension() {
-        let b = document.getElementById("age").value.replace(/,/gi, ".");
-        let text2;
-        if (b < 0 || isNaN(b)) {
-          text2 = "Зазирни в свій паспорт, то точно роки?";
-        } else if (b == 65) {
-          text2 = "Вітаю, ти вже на пенсії!";
-        } else if (b > 65) {
-          pen = b - 65;
-          text2 = "Вітаю, ти вже " + pen + " років на пенсії!";
-        } else {
-          years = 65 - b;
-          inYear = 2022 + years;
-          text2 =
-            "До пенсії лишилося " +
-            years +
-            " років, і вона прийде в " +
-            inYear +
-            " році";
-        }
-        document.getElementById("showp").innerHTML = text2;
-      }
-    </script>
     <hr />
     <h2>Слідкуй за руками</h2>
     <p>Введи трицифрове число</p>
     <input id="three" />
     <button type="button" onclick="reverseIt()">Робити магію</button>
-    <p id="showt">Зара буде меджік...</p>
-
-    <script>
-      function reverseIt() {
-        let k = document.getElementById("three").value;
-        let text3;
-        if (k.length === 4 && k.indexOf("-") > -1) {
-          reverseda = k.split("").slice(1).reverse().join("");
-          text3 = "Тримай -" + reverseda;
-        } else if (isNaN(k) || k.length > 3 || k.length < 3) {
-          text3 = "Ніт! Домовлялися тільки про трицифрове";
-        } else {
-          reversed = k.split("").reverse().join("");
-          text3 = "Тримай " + reversed;
-        }
-        document.getElementById("showt").innerHTML = text3;
-      }
-    </script>
+    <p id="showt">Зараз буде меджік...</p>
+    <script src="js\reversed.js"></script>
+    <script src="js\pension.js"></script>
+    <script src="js\area.js"></script>
   </body>
 </html>

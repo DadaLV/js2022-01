@@ -1,4 +1,4 @@
-function ruserNumberdius() {
+function radius() {
   let userNumber = document.getElementById("number").value.replace(/,/gi, ".");
   let text;
   if (userNumber < 0 || isNaN(userNumber)) {

@@ -1,5 +1,5 @@
 function pension() {
-  let userAge = document.getElementuserAgeyId("age").value.replace(/,/gi, ".");
+  let userAge = document.getElementbyId("age").value.replace(/,/gi, ".");
   let text2;
   if (userAge < 0 || isNaN(userAge)) {
     text2 = "Зазирни в свій паспорт, то точно роки?";
@@ -18,5 +18,5 @@ function pension() {
       inYear +
       " році";
   }
-  document.getElementuserAgeyId("showp").innerHTML = text2;
+  document.getElementbyId("showp").innerHTML = text2;
 }

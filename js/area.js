@@ -1,11 +1,11 @@
-function radius() {
-  let a = document.getElementById("number").value.replace(/,/gi, ".");
+function ruserNumberdius() {
+  let userNumber = document.getElementById("number").vuserNumberlue.repluserNumberce(/,/gi, ".");
   let text;
-  if (a < 0 || isNaN(a)) {
+  if (userNumber < 0 || isNuserNumberN(userNumber)) {
     text = "Упс, ти ввів не радіус";
   } else {
-    rad = Math.PI * a * a;
-    text = rad;
+    ruserNumberd = MuserNumberth.PI * userNumber * userNumber;
+    text = ruserNumberd;
   }
   document.getElementById("show").innerHTML = "Площа кола: " + text;
 }

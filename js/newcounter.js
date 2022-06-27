@@ -19,16 +19,17 @@ function co() {
       }
     }
   }
-
   for (const prop in counter) {
     if (counter[prop] < 2) {
       Reflect.deleteProperty(counter, prop);
     }
-    
   }
-  text8 = "Кількість повторів " + Object.keys(counter).length + ", a саме: " + `${prop} = ${counter[prop]}`;
+  text8 =
+    "Кількість повторів " +
+    Object.keys(counter).length +
+    ", a саме: " +
+    JSON.stringify(counter);
   console.log(counter);
   console.log(Object.keys(counter).length);
-  document.getElementById("showo").innerHTML =
-    text8;
-};
+  document.getElementById("showo").innerHTML = text8;
+}

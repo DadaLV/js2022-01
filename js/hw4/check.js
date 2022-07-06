@@ -8,5 +8,5 @@ let print = JSON.stringify(obj);
 console.log(print);
 let sum = this.price * this.quantaty;
 console.log(sum);
-let sortedPrice =
+let sortedPrice = 
 }

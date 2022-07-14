@@ -3,6 +3,5 @@ function Calculator(a, b, sign) {
   return result % 1 === 0 ? result : result.toFixed(1);
 }
 
-console.log(Calculator(12, 4, '+'));
-console.log(Calculator(18, 0, '/'));
-
+console.log(Calculator(12, 4, "+"));
+console.log(Calculator(18, 0, "/"));

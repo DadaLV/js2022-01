@@ -28,6 +28,7 @@ function numberConverter(number) {
         break;
       case "18":
         num = "вісімнадцять";
+        break;
       case "19":
         num = "дев'ятнадцять";
         break;

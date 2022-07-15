@@ -1,4 +1,11 @@
 function change(str) {
-  return str.toUpperCase().replace(/[0-9]/g, "_");
+  let result = str
+    .replace(/[0-9]/g, "_")
+    .split("")
+    .map(function (el) {
+      return el === el.toUpperCase() ? el.toLowerCase() : el.toUpperCase();
+    })
+    .join("");
+  return result;
 }
-console.log(change("ghjhfj99gy65"));
+console.log(change("ghGIfj99gy65"));

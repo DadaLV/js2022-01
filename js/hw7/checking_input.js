@@ -1,10 +1,12 @@
 function checking_input() {
   const name = document.getElementById("name").value;
-  let answer;
-  if (name.test(/\d/) === true) {
-    answer = "Name can't contain digits";
+  let text;
+  if (/\d/.test(name) === true) {
+    text = "Name can't contain digits";
   } else {
-    answer = name;
+    text = name;
   }
-  document.getElementById("answer").innerHTML = answer;
+  document.getElementById("a").innerHTML = text;
 }
+;
+console.log(checking_input("jhjhfjfj"))

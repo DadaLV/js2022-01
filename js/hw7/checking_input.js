@@ -7,6 +7,4 @@ function checking_input() {
     text = name;
   }
   document.getElementById("a").innerHTML = text;
-}
-;
-console.log(checking_input("jhjhfjfj"))
+};

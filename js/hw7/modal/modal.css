@@ -1,0 +1,45 @@
+body {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+button {
+  background-color: #e2e208;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+}
+
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: blue;
+  width: 300px;
+  max-width: 100%;
+  padding: 30px 30px;
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+class Circle{
+  constructor (radius,) {
+  this.radius = radius;
+  areaOfCircle() {
+    areaOfCircle = Math.PI*this.radius*this.radius;
+  }
+  lengthOgCircle() {
+    lengthOgCircle = 2*Math.PI*this.radius;
+  }
+  }
+}

@@ -18,7 +18,8 @@ class Circle {
     lengthOgCircle = 2 * Math.PI * this.radius;
   }
 }
-
+const c = new Circle
+console.log()
 //поле, що зберігає радіус кола;
 // get-властивість, що повертає радіус кола;
 // set-властивість, що встановлює радіус кола;
